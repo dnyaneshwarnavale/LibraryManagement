@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Library Mgmt</title>
+    <link href="~/resources/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/resources/Style.css" rel="stylesheet" />
+    @RenderSection("styles", false);
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="~/resources/images/Logo.png"> LibMan
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class=" nav-link" asp-controller="Book" asp-action="Add"> Add Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="#"> Pricing</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success me-2" type="button"> Login</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success me-2" type="button"> Register</button>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <main role="main">
+        @RenderBody()
+    </main>
+    <footer class="footer mt-auto py-3 bg-light text-center">
+        <div class="container">
+            <p class="mb-1"> Library Management &copy; A property of DN </p>
+        </div>
+     </footer>
+
+    <script src="~/resources/lib/jquery/jquery.js"></script>
+    @RenderSection("scripts", false);
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿@model Library.Models.Book;
+<div class="container p-5">
+    <form method="post" asp-controller="Book" asp-action="Add">
+        <div class="row">
+            <div class="col-6">
+                <div class="card" style="width:30rem;">
+                    <img src="~/resources/images/Book2.png" class="card-img-top" alt="MVC">
+                    <div class="mb-3">
+                        <label asp-for="Cover" class="form-label">Upload Book Cover </label>
+                        <input class="form-control form-control-sm" asp-for="Cover" type="file">
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-5 offset-1">
+                        <button class="col-12 btn btn-outline-primary">Save Changes</button>
+                    </div>
+
+                    <div class="col-5">
+                        <button class="col-12 btn btn-outline-danger">Discard</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Name</label>
+                            <input  class="form-control" asp-for="Name" placeholder="enter name">
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Author" class="form-label">Author</label>
+                            <input  class="form-control" asp-for="Author" placeholder="enter author">
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Publication" class="form-label">Publisher</label>
+                            <input  class="form-control" asp-for="Publication" placeholder="enter publisher">
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Book Description</label>
+                            <textarea class="form-control" asp-for="Description" placeholder="enter Description" rows="4"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="PageNumber" class="form-label">PageNumber</label>
+                            <input  class="form-control" asp-for="PageNumber" placeholder="enter PageNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="IsAvailable" class="form-label">IsAvailable</label>
+                            <input  asp-for="IsAvailable" placeholder="enter IsAvailable">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>

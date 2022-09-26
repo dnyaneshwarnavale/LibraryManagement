@@ -1,0 +1,155 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+  <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+</PropertyGroup>
+<ItemGroup>
+  <Content Include="resources\lib\jquery\jquery.js" />
+  <Content Include="resources\lib\jquery\jquery.min.js" />
+  <Content Include="resources\lib\jquery\jquery.min.map" />
+  <Content Include="resources\lib\jquery\jquery.slim.js" />
+  <Content Include="resources\lib\jquery\jquery.slim.min.js" />
+  <Content Include="resources\lib\jquery\jquery.slim.min.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-grid.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-grid.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-grid.min.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-grid.min.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-grid.rtl.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-grid.rtl.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-grid.rtl.min.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-reboot.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-reboot.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-reboot.min.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-reboot.min.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-reboot.rtl.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-reboot.rtl.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-reboot.rtl.min.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-utilities.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-utilities.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-utilities.min.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-utilities.min.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-utilities.rtl.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-utilities.rtl.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-utilities.rtl.min.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap.min.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap.min.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap.rtl.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap.rtl.css.map" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap.rtl.min.css" />
+  <Content Include="resources\twitter-bootstrap\css\bootstrap.rtl.min.css.map" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.bundle.js" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.bundle.js.map" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.bundle.min.js" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.bundle.min.js.map" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.esm.js" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.esm.js.map" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.esm.min.js" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.esm.min.js.map" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.js" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.js.map" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.min.js" />
+  <Content Include="resources\twitter-bootstrap\js\bootstrap.min.js.map" />
+  <Content Include="resources\twitter-bootstrap\scss\bootstrap-grid.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\bootstrap-reboot.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\bootstrap-utilities.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\bootstrap.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\forms\_floating-labels.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\forms\_form-check.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\forms\_form-control.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\forms\_form-range.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\forms\_form-select.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\forms\_form-text.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\forms\_input-group.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\forms\_labels.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\forms\_validation.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_clearfix.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_color-bg.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_colored-links.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_position.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_ratio.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_stacks.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_stretched-link.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_text-truncation.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_visually-hidden.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\helpers\_vr.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_alert.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_backdrop.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_banner.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_border-radius.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_box-shadow.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_breakpoints.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_buttons.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_caret.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_clearfix.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_color-scheme.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_container.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_deprecate.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_forms.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_gradients.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_grid.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_image.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_list-group.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_lists.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_pagination.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_reset-text.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_resize.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_table-variants.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_text-truncate.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_transition.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_utilities.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\mixins\_visually-hidden.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\utilities\_api.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\vendor\_rfs.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_accordion.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_alert.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_badge.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_breadcrumb.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_button-group.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_buttons.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_card.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_carousel.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_close.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_containers.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_dropdown.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_forms.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_functions.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_grid.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_helpers.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_images.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_list-group.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_maps.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_mixins.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_modal.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_nav.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_navbar.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_offcanvas.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_pagination.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_placeholders.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_popover.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_progress.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_reboot.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_root.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_spinners.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_tables.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_toasts.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_tooltip.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_transitions.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_type.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_utilities.scss" />
+  <Content Include="resources\twitter-bootstrap\scss\_variables.scss" />
+</ItemGroup>
+<ItemGroup>
+  <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.29" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.29">
+    <PrivateAssets>all</PrivateAssets>
+    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+  </PackageReference>
+  <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+</ItemGroup>
+</Project>

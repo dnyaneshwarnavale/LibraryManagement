@@ -1,0 +1,56 @@
+﻿@using Library.Models;
+@using Microsoft.AspNetCore.Mvc.TagHelpers;
+@model IEnumerable<Book>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Today's Thought</h1>
+                    <p class="lead text-muted">"In the case of good books, the point is not to see how many of them you can get through, but how many can get through to you."</p>
+                    <p>
+                        - Morrtimer J. Adler
+                    </p>
+                    <p>
+                        <input class="form-control me-2" type="search" placeholder="Search your favourite book !!" aria-label="Search">
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    @foreach (var book in Model)
+                    {
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/resources/images/Book1.png" />
+                                <div class="card-body">
+                                    <div class="card-title"> @book.Name</div>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <!-- using Tag Helper  --  create server end -->
+                                             <a asp-controller="Book" asp-action="Details" asp-route-id="@book.ID" asp-route-name="@book.Name" class="btn btn-sm btn-outline-secondary">View</a>                        
+                
+                                            <!-- old way-->
+                                            @Html.ActionLink("View", "Details", "Book", new { id = book.ID }, new { @class = "btn btn-sm btn-outline-secondary" })
+                                            <a href="@Url.ActionLink("Details","Book",new { id=book.ID})" class="btn btn-sm btn-outline-secondary">View</a>
+                                            <a href="/Book/Details/@book.ID" class="btn btn-sm btn-outline-secondary">View</a>
+                                            <!-- end old way-->
+
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+
+                </div>
+            </div>
+        </div>
